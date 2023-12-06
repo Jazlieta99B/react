@@ -1,0 +1,20 @@
+header {
+    color: rgb(161, 31, 161);
+    background-color: rgba(172, 222, 192, 0.8);
+    border: 5px solid rgb(172, 222, 192);
+    margin: 0;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-family: cursive;
+    width: fit-content;
+}
+
+.bt {
+    color: #f46278;
+    border: rgb(244, 98, 120) solid 2px;
+    background-color: rgba(244, 98, 120, 0.2);
+    font-size: 1.2rem;
+    width: 8rem;
+}

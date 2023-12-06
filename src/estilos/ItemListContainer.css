@@ -1,0 +1,10 @@
+h2 {
+    text-align: center;
+    color: #a11fa1;
+    font-size: 2rem;
+}
+
+.contenedor {
+    background-color: rgb(248, 233, 215);
+    margin: 0;
+}
