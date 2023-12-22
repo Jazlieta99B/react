@@ -1,8 +1,11 @@
-# React + Vite
+# Curso React Js
+## Alumna: **Jazmín Castelo**    
+---
+### Ecommerce de productos para crochet "Violet Crochet"
+---
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### _Se utilizaron las librerías:_
+- Chakra UI
+- Uiverse.io
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[Perfil de LinkedIn](https://www.linkedin.com/in/jazm%C3%ADn-castelo/)
