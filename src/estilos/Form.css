@@ -1,0 +1,31 @@
+.form {
+    width: 80%;
+    background-color: palegreen;
+    padding: 2%;
+    margin: 1% auto auto auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: rgb(107, 242, 107) 2px solid;
+}
+
+.form input {
+    color: white;
+    margin: 1%;
+    background-color: rgba(161, 31, 161, 0.5);
+    border: 1px solid white;
+}
+
+.form button {
+    background-color: palevioletred;
+    border: 3px solid rgb(214, 43, 100);
+    padding: 0.5%;
+    margin: 1%;
+    color: rgb(214, 43, 100);
+    border-radius: 50%;
+}
+
+.form label {
+    color: rgb(161, 31, 161);
+    font-size: 1.3rem;
+}

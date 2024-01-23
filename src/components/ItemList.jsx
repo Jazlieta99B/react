@@ -3,7 +3,7 @@ import Item from "./Item";
 import "../estilos/style.css"
 
 
-const ItemList = ({ productos }) => {
+const ItemList = ({ productos}) => {
     return (
         <div className="contenedorItem">
             {
@@ -14,7 +14,7 @@ const ItemList = ({ productos }) => {
                             titulo={p.titulo}
                             precio={p.precio}
                             descripcion={p.descripcion}
-                            id={p.id}
+                            categoria={p.categoria}
                         />
                     )
                 })
@@ -22,4 +22,4 @@ const ItemList = ({ productos }) => {
         </div>
     )
 }
-export default ItemList
+export default React.memo(ItemList)

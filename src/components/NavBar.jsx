@@ -20,12 +20,24 @@ const NavBar = () => {
                             <p className="bt">Productos</p>
                         </MenuButton>
                         <MenuList className="bt">
-                            <Link to={"/"}><MenuItem color="#f46278">Todos los productos</MenuItem></Link>
-                            <Link to={"/categoria/hilos"}><MenuItem color="#f46278">Hilos</MenuItem></Link>
-                            <Link to={"/categoria/ganchos"}><MenuItem color="#f46278">Ganchos</MenuItem></Link>
-                            <Link to={"/categoria/agujasDeZrcir"}><MenuItem color="#f46278">Aguja de zurcir</MenuItem></Link>
-                            <Link to={"/categoria/tijerasCortahilos"}><MenuItem color="#f46278">Tijeras y cortahilos</MenuItem></Link>
-                            <Link to={"/categoria/MarcadoresDePunto"}><MenuItem color="#f46278">Marcadores de punto</MenuItem></Link>
+                            <Link to={"/"}>
+                                <MenuItem color="#f46278">Todos los productos</MenuItem>
+                            </Link>
+                            <Link to={"/categoria/hilos"}>
+                                <MenuItem color="#f46278">Hilos</MenuItem>
+                            </Link>
+                            <Link to={"/categoria/ganchos"}>
+                                <MenuItem color="#f46278">Ganchos</MenuItem>
+                            </Link>
+                            <Link to={"/categoria/agujasDeZrcir"}>
+                                <MenuItem color="#f46278">Aguja de zurcir</MenuItem>
+                            </Link>
+                            <Link to={"/categoria/tijerasCortahilos"}>
+                                <MenuItem color="#f46278">Tijeras y cortahilos</MenuItem>
+                            </Link>
+                            <Link to={"/categoria/MarcadoresDePunto"}>
+                                <MenuItem color="#f46278">Marcadores de punto</MenuItem>
+                            </Link>
                         </MenuList>
                     </Menu>
                 </Box>

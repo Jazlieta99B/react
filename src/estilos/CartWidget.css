@@ -1,11 +1,15 @@
+.carrito {
+    display: inline-flex;
+    gap: 15%;
+}
+
 .contador {
-    color: rgb(10, 135, 84);
-    border: rgb(10, 135, 84) solid 2px;
+    color: rgb(161, 31, 161);
+    border: rgb(161, 31, 161) solid 2px;
     font-weight: 700;
     text-align: center;
     align-items: center;
-    background-color: rgba(10, 135, 84, 0.4);
-    padding: 4%;
+    background-color: rgba(161, 31, 161, 0.3);
+    padding: 10%;
     border-radius: 50%;
-    width: 2rem;
 }
