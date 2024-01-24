@@ -1,29 +1,28 @@
 import ItemDetail from "./ItemDetail";
 import { useState, useEffect } from "react";
-import { getFirestore, getDoc, doc } from "firebase/firestore";
+import { getFirestore, collection, getDocs } from "firebase/firestore";
 import { useParams } from "react-router-dom";
 import ItemCount from "./ItemCount";
 
 const ItemDetailContainer = () => {
-  const id  = useParams().id;
-  const [item, setItem] = useState(null)
+  const [item, setItem] = useState([])
 
   useEffect(() => {
     const db = getFirestore()
-    const item = doc(db, "productos", "id");
-
-    getDoc(item).then((resp) => {
-    setItem(
-      { ...resp.data(), id:resp.id })  
+    const itemsCollection = collection(db, "productos")
+    getDocs(itemsCollection).then((querysnapshot) => {
+      const items = querysnapshot.docs.map((doc) => ({
+        ...doc.data(),
+        id: doc.id
+      }))
+      setItem(items)
     })
-  }, [id])
+  }, [])
 
-    return (
-      <div>
-        {item && <ItemDetail item={item} />}
-      </div>
-    )
-  }
+
+  return <ItemDetail items={item} />
+
+}
 export default ItemDetailContainer
 
 

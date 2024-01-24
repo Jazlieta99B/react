@@ -5,7 +5,6 @@ export const ShoppingCartProvider = ({ children }) => {
     const [carrito, setCarrito] = useState([]);
 
     const cantidad = carrito.length
-    {console.log(cantidad)}
     return (
         <CartContext.Provider value={{cantidad}}>
             {children}

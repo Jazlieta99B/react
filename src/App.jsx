@@ -9,6 +9,7 @@ import { useState, useEffect } from "react"
 import "./estilos/app.css"
 import Formulario from "./components/Formulario"
 import ShoppingCartContext from "./context/ShoppingCartContext"
+import { CartContext } from "./context/ShoppingCartContext"
 
 const App = () => {
 
@@ -25,6 +26,8 @@ const App = () => {
   }
 
   return (
+    <div>
+
     <BrowserRouter>
       <ShoppingCartContext >
         {<ChakraProvider />}
@@ -41,6 +44,7 @@ const App = () => {
 
       </ShoppingCartContext>
     </BrowserRouter>
+    </div>
   )
 }
 
