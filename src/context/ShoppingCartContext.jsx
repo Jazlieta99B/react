@@ -1,4 +1,4 @@
-import { createContext, useState, useEffect } from "react";
+import { createContext, useState } from "react";
 export const CartContext = createContext(null)
 
 export const ShoppingCartProvider = ({ children }) => {
@@ -6,13 +6,10 @@ export const ShoppingCartProvider = ({ children }) => {
 
     const cantidad = carrito.length
     return (
-        <CartContext.Provider value={{cantidad}}>
+        <CartContext.Provider value={{ cantidad, carrito, setCarrito }}>
             {children}
         </CartContext.Provider>
     )
-
-
-
 }
 
 export default ShoppingCartProvider

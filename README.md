@@ -8,6 +8,14 @@
 - Chakra UI
 - Uiverse.io
 
+### _Se utilizó firebase:_
+
+
 [Perfil de LinkedIn](https://www.linkedin.com/in/jazm%C3%ADn-castelo/)
 
-[Gif de navegación] ![pre-entrega2](https://github.com/Jazlieta99B/react/assets/140523156/a3ee8a24-516e-48ec-aa2d-8c91ef8958b3)
+<!--    	De que trata el eccomerce -> que categorías tengo
+           	Explicar como se usa, que puedo seleccionar mas de uno, se envia al carrito
+           	Comentar que tengo el formulario, al enviarse a la base de datos se devuelve un id mostrado en pantalla
+Se utiliza la base de datos firebase para almacenar “”
+Usamos react-router-dom, chakra , …
+ -->
