@@ -1,7 +1,9 @@
 import "../estilos/CartWidget.css"
 import { Link } from 'react-router-dom';
 
+
 const CartWidget = () => {
+
     return (
         <>
             <div className="carrito">
@@ -12,7 +14,6 @@ const CartWidget = () => {
                         </svg>
                     </button>
                 </Link>
-                <button className="contador">0</button>
             </div>
         </>
     )

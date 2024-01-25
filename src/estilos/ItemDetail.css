@@ -1,6 +1,6 @@
 .cardDetalle {
-  width: 230px;
-  height: 270px;
+  width: 270px;
+  height: 470px;
   background: rgb(172, 222, 192);
   position: relative;
   display: flex;
@@ -28,8 +28,8 @@
 
 .cardDetalle .precio {
   z-index: 1;
-  color: black;
-  font-size: 1.1rem;
+  color: palevioletred;
+  font-size: 1rem;
   text-align: center;
   padding: 1%;
 }
@@ -67,4 +67,10 @@
   background: rgb(172, 222, 192);
   inset: 5px;
   border-radius: 15px;
+}
+
+img {
+  height: fit-content;
+  width: fit-content;
+  margin: auto;
 }

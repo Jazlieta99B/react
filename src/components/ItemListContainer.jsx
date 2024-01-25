@@ -8,18 +8,19 @@ const ItemListContainer = () => {
     const { category } = useParams();
 
     useEffect(() => {
-        // ACA ESTA LA DIFERENCIA
         const db = getFirestore();
-        const productosCollection = collection(db, "productos")
+        const productosCollection = collection(db, "productos");
         getDocs(productosCollection).then((resp) => {
-            setProductos(resp.docs.map((doc) => {
-                return {
-                    ...doc.data(), id: doc.id
-                }
-            }))
+            setProductos(
+                resp.docs.map((doc) => {
+                    return {
+                        ...doc.data(),
+                        id: doc.id
+                    }
+                })
+            )
         })
     }, [])
-
 
     const catFilter = productos.filter((productos) => productos.categoria === category)
 
@@ -30,5 +31,4 @@ const ItemListContainer = () => {
         </div>
     )
 }
-
-export default ItemListContainer
+export default ItemListContainer;
